@@ -1,0 +1,134 @@
+.dashboardContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--color-bg);
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 1rem 2rem;
+  box-shadow: var(--shadow-sm);
+  z-index: 10;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.userName {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.userEmail {
+  font-size: 0.75rem;
+  color: var(--color-accent);
+}
+
+.logoutBtn {
+  background-color: transparent;
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.logoutBtn:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: var(--color-white);
+  border-right: 1px solid #e2e8f0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sidebarTitle {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.05em;
+}
+
+.reportBtn {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  background-color: transparent;
+  color: var(--color-text-main);
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.reportBtn:hover {
+  background-color: var(--color-bg);
+}
+
+.reportBtn.active {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.content {
+  flex: 1;
+  background-color: #e2e8f0;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.iframeWrapper {
+  flex: 1;
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+}
+
+.iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}

@@ -23,3 +23,7 @@ The production build passed, but existing ESLint findings remain (including unus
 ## Production npm dependency audit — enterprise-indicators-portal
 
 `npm audit --omit=dev --json` reported 0 critical, 0 high, 0 moderate, 0 low findings in the installed dependency tree on 2026-10-28. Counts include transitive packages and do not establish exploitability in this application.
+
+## Synthetic local function checks
+
+Three Node tests passed for method/input rejection, successful lookup without leaking the credential list, wrong-password rejection and a generic error when local configuration is unavailable. The tests use only temporary fictitious configuration. They do not establish a trusted session, report authorization or production-ready authentication.

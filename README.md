@@ -42,3 +42,7 @@ No new distribution license is granted for this corporate source edition. Public
 ## Verification record
 
 See [snapshot checks and remaining limitations](docs/VERIFICATION.md).
+
+## Local function and synthetic checks
+
+After setting up the ignored local configuration, `npx netlify dev` provides the local function proxy. The example contains only a fictitious operator and a non-routable report URL; replace them only in the ignored local file. `npm test` checks the function with temporary synthetic configuration and no network access. These checks do not turn the prototype into a secure authentication service.

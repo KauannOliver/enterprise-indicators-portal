@@ -1,4 +1,16 @@
 {
-  "users": [],
-  "reports": []
+  "users": [
+    {
+      "name": "Demo Operator",
+      "email": "operator@example.invalid",
+      "password": "replace-locally"
+    }
+  ],
+  "reports": [
+    {
+      "id": "demo-report",
+      "title": "Fictitious demonstration report",
+      "url": "https://example.invalid/report"
+    }
+  ]
 }
